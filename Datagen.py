@@ -7,7 +7,7 @@ def genrand(pCount):
     indexlist = list(string.ascii_uppercase[:pCount])
     df = pd.DataFrame((450 * abs(np.random.randn(pCount, pCount))+ 200), index=indexlist, columns=[x+2015 for x in range(pCount)])
     df= df.round(2)
-    print(df.values.tolist())#use sqrt
+    print(df.values.tolist())
     df.to_csv("Data.csv")
 
 
