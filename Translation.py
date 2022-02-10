@@ -26,5 +26,6 @@ class MLP:
     def cfa(self, data):
         print(data)
         layer = []
+        curLayer = 0
         for x in range(self.layers):
-            temp = data.append(self.bias[0])
+            temp = data.append(self.bias[curLayer])
